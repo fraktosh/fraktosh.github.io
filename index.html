@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soham Saha - CV</title>
+<meta name="description" content="Soham Saha, B.S. Electronics and Communication Engineering at IISER Bhopal. Embedded systems, TinyML, circuit and PCB design.">
+<style>
+  :root { --bg: #f7f8fa; --fg: #1c2430; --muted: #5a6677; --line: #dfe3ea; --accent: #2457d6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0f17; --fg: #e6eaf0; --muted: #9aa6b8; --line: #243042; --accent: #7aa2ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2.2rem; margin: 0 0 4px; }
+  h2 { font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; margin: 36px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  h3 { font-size: 1rem; margin: 16px 0 2px; }
+  .sub, .when, .meta { color: var(--muted); }
+  .row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: baseline; }
+  .row h3 { margin: 16px 0 2px; }
+  .when { font-size: .9rem; white-space: nowrap; }
+  ul { margin: 4px 0 0; padding-left: 20px; }
+  li { margin: 3px 0; }
+  a { color: var(--accent); }
+  .tags { color: var(--muted); }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 20px; margin: 0; }
+  dt { font-weight: 600; }
+  dd { margin: 0; }
+  @media (max-width: 520px) { dl { grid-template-columns: 1fr; gap: 0; } dd { margin-bottom: 8px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Soham Saha</h1>
+  <p class="sub" style="margin:0">B.S. Electronics &amp; Communication Engineering, IISER Bhopal</p>
+  <p class="meta" style="margin:4px 0 0"><a href="mailto:sahasoham814@gmail.com">sahasoham814@gmail.com</a> &middot; <a href="mailto:sohams24@iiserb.ac.in">sohams24@iiserb.ac.in</a> &middot; <a href="https://github.com/fraktosh">GitHub</a> &middot; <a href="https://x.com/fraktosh">@fraktosh</a></p>
+
+  <h2>Education</h2>
+  <div class="row"><h3>Indian Institute of Science Education and Research (IISER) Bhopal</h3><span class="when">Aug 2024 &ndash; Present</span></div>
+  <div class="sub">B.S. in Electronics and Communication Engineering &middot; currently in 5th semester</div>
+  <p style="margin:8px 0 4px"><em>Relevant coursework</em></p>
+  <dl>
+    <dt>Electronics &amp; Engineering</dt><dd>Basic Electronics, Engineering Mechanics, Chemical Engineering Thermodynamics, Chemical Process Technologies and Calculations, Signals and Systems</dd>
+    <dt>Computing</dt><dd>Introduction to Programming, Discrete Mathematics I, Linear Algebra, Data Structures and Algorithms</dd>
+    <dt>Mathematics</dt><dd>Multivariate Calculus, Calculus I</dd>
+    <dt>Physics</dt><dd>Quantum Physics, Mechanics</dd>
+    <dt>Data &amp; Economics</dt><dd>Econometrics I, Principles of Economics I &amp; II, Macroeconomics I</dd>
+  </dl>
+
+  <h2>Technical skills</h2>
+  <dl>
+    <dt>Electronics &amp; circuit design</dt><dd>Analog and digital circuit design, analysis and system design; circuit simulation in LTspice; PCB design and schematic capture in KiCad</dd>
+    <dt>Embedded systems &amp; TinyML</dt><dd>Embedded systems development, microcontroller-based system design, sensor interfacing and data acquisition, embedded machine learning / TinyML, real-time data processing</dd>
+    <dt>Programming</dt><dd>Python, C, C++, Java</dd>
+    <dt>Data science &amp; ML</dt><dd>NumPy, Pandas, scikit-learn, Matplotlib, data analysis and interpretation, basic machine learning, statistical analysis</dd>
+    <dt>Other tools</dt><dd>Git, Stata</dd>
+  </dl>
+
+  <h2>Projects</h2>
+  <div class="row"><h3>Federated Wearable Health Monitoring Platform</h3><span class="when">Aug 2026 &ndash; Present</span></div>
+  <ul>
+    <li>Building a standalone wearable (ESP32-S3, MAXM86161 PPG, BMI270 IMU) for continuous heart-rate, SpO<sub>2</sub> and motion monitoring without a smartphone.</li>
+    <li>Privacy-first architecture: raw 100 Hz sensor data stays on the device, and only federated model updates are shared over the local network to a server for averaging.</li>
+    <li>Implementing on-device TinyML training during charging, with charge detection and battery management via a MAX17048 fuel gauge and a BQ24074 power-path charger.</li>
+    <li>Developing federated-learning client firmware for local training, weight upload and global-model synchronisation.</li>
+    <li>Designing a custom 4-layer PCB that integrates sensing, storage, power and wireless compute for 30&ndash;40+ hours of battery life.</li>
+  </ul>
+  <div class="row"><h3>Campus E-Rickshaw Tracking System</h3><span class="when">Nov 2025 &ndash; Feb 2026</span></div>
+  <ul>
+    <li>Real-time vehicle tracking system for campus e-rickshaws using GPS-based location sensing, data acquisition and live visualisation.</li>
+    <li>Designed the system architecture for reliable acquisition, transmission, processing and visualisation of real-time sensor data.</li>
+    <li>Worked on low-latency, reliable data handling for a closed-campus deployment, and explored embedded-system integration and edge-based processing for scalable real-time operation.</li>
+  </ul>
+  <div class="row"><h3>Amazon Web Scraper</h3><a class="when" href="https://github.com/fraktosh">GitHub</a></div>
+  <ul>
+    <li>Python data acquisition and analysis pipeline using BeautifulSoup and Pandas.</li>
+    <li>Automated extraction, cleaning and analysis of product data from Amazon.in.</li>
+  </ul>
+  <div class="row"><h3>Stock Prediction Web Application</h3><a class="when" href="https://github.com/fraktosh">GitHub</a></div>
+  <ul>
+    <li>Python web application that generates stock predictions using data-driven approaches.</li>
+    <li>Applied data processing and basic predictive modelling to financial data.</li>
+  </ul>
+
+  <h2>Experience &amp; activities</h2>
+  <div class="row"><h3>Summer Research Intern, SIRL, IISER Bhopal</h3><span class="when">Summer 2026</span></div>
+  <div class="sub">Supervisor: Dr. Haroon Lone</div>
+  <ul>
+    <li>Worked on an embedded, intelligent device for mental-health intervention, aimed at helping people with social anxiety.</li>
+    <li>Gained hands-on experience in circuit design, system development and hardware&ndash;software integration.</li>
+  </ul>
+  <div class="row"><h3>Humans of IISERB, Core Committee Member</h3><span class="when">Jan 2025 &ndash; Present</span></div>
+  <ul>
+    <li>Contribute to student-led campus events and organisational activities.</li>
+    <li>Write articles on recent campus activities and voice student concerns on the campus forum.</li>
+  </ul>
+
+  <h2>Technical interests</h2>
+  <p class="tags" style="margin:0">Analog &amp; RF electronics &middot; Embedded systems &middot; Circuit design &middot; PCB design &middot; TinyML &middot; Edge AI &middot; Sensor systems &middot; Embedded machine learning &middot; Hardware&ndash;software co-design</p>
+</main>
+</body>
+</html>
